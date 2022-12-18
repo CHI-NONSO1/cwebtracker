@@ -1,0 +1,202 @@
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  font-size: 100%;
+}
+
+.watcher__box--container{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width:820px){
+  .watcher__box--container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+}
+
+.tracker__box{
+  width: 80%;
+  height: 100%;
+
+  background: yellowgreen;
+}
+@media screen and (max-width:820px){
+  .tracker__box{
+    width: 100%;
+    height: 100%;
+
+
+  }
+  
+}
+
+
+.watcher__box{
+  width: 20%;
+  height: 100%;
+position: relative;
+  background: navy;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+@media screen and (max-width:820px){
+  .watcher__box{
+    width: 100%;
+    height: 40%;
+    display: flex;
+  flex-direction: row;
+    justify-content: space-around;
+
+  }
+  
+}
+
+.watcher__box-flex{
+  width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    color: #fff;
+  
+}
+
+@media screen and (max-width:820px){
+  .watcher__box-flex{
+    width: 80%;
+    height: 100%;
+  }
+  
+}
+.circle__style{
+  height: 25%;
+  width: 80%;
+}
+@media screen and (max-width:820px){
+  .circle__style{
+    height: 35%;
+    width: 20%;
+  }
+  
+}
+.starting__distance{
+  width: 90%;
+  height: 20%;
+  padding: 2%;
+  margin: 0 auto;
+  border-radius: 8px;
+  background: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.remaining__distance{
+  width: 90%;
+  height: 20%;
+  padding: 2%;
+  margin: 0 auto;
+  border-radius: 8px;
+  transition: all 3s;
+  animation: colourPulsate 3s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: orangered;
+}
+
+@keyframes colourPulsate {
+  0%{
+    background: palegreen;
+  }
+  10%{
+    background: orangered;
+  }
+  20%{
+    background: blue;
+  }
+  30%{
+    background: red;
+  }
+  80%{
+    background: teal;
+  }
+  100%{
+    background: orangered;
+  }
+}
+
+.starting__time{
+  width: 90%;
+  height: 20%;
+  padding: 2%;
+  margin: 0 auto;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: green;
+}
+
+
+.arrival__time{
+  width: 90%;
+  height: 20%;
+  padding: 2%;
+  margin: 0 auto;
+  border-radius: 8px;
+  transition: all 3s;
+  animation: colourPulsate 3s linear infinite;
+  background: orangered;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width:820px){
+  .arrival__time, .starting__time, .remaining__distance, .starting__distance{
+    width: 90%;
+    height: 35%;
+    padding: 2%;
+    border-radius: 8px;
+  }
+  
+}
+.starting__point, .moving__direction{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: space-around;
+  
+}
+
+@media screen and (max-width:820px) {
+  .starting__point, .moving__direction{
+    width: 90%;
+    height: 45%;
+    
+  }
+}
